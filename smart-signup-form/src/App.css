@@ -1,0 +1,96 @@
+.app-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.form-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.field-group {
+  margin-bottom: 14px;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.field-group input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field-group input:focus {
+  border-color: #2563eb;
+}
+
+.signup-btn {
+  width: 100%;
+  margin-top: 4px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: #1d4ed8;
+}
+
+.error-text {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #dc2626;
+}
+
+.success-text {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 600;
+  text-align: center;
+}
+
+.strength-text {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #475569;
+}
+
+.strength-text span {
+  font-weight: 600;
+}

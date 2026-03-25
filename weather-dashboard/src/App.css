@@ -1,0 +1,148 @@
+.dashboard {
+    max-width: 420px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 32px 28px;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.header p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-bar button {
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    color: #764ba2;
+}
+
+.search-bar button:hover {
+    background: #f0e6ff;
+}
+
+.state-box {
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 10px;
+}
+
+.state-box.loading {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.state-box.error {
+    background: rgba(231, 76, 60, 0.25);
+    color: #fdd;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.result-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.result-top img {
+    width: 64px;
+    height: 64px;
+}
+
+.result-top h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.desc {
+    font-size: 14px;
+    opacity: 0.85;
+    text-transform: capitalize;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+.grid-label {
+    display: block;
+    font-size: 11px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+
+.grid-value {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}

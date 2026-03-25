@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    padding: 30px 15px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.card table td {
+    padding: 4px 0;
+}
+
+.card table td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+.card .divider {
+    border-top: 1px solid #eee;
+    margin: 8px 0;
+}
+
+.card .summary {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #555;
+}
+
+.card .summary span {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.grade {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+}
+
+.grade-a-plus { background: #27ae60; }
+.grade-a { background: #2ecc71; }
+.grade-b { background: #f39c12; }
+.grade-c { background: #e67e22; }
+.grade-d { background: #e74c3c; }
+.grade-f { background: #c0392b; }
+
+.overview {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.overview table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.overview table th,
+.overview table td {
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.overview table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.overview table tr:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.log {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.log p {
+    margin-bottom: 4px;
+}
+
+.log strong {
+    color: #2c3e50;
+}

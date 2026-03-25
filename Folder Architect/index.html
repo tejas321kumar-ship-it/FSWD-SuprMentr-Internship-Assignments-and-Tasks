@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folder Architect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1>Folder Architect</h1>
+    <p class="subtitle">Retrieve data and show it like folders and files</p>
+
+    <div class="controls">
+      <button id="loadBtn">Load Data</button>
+      <input id="searchInput" type="text" placeholder="Search file title..." />
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <p id="statusMessage" class="status">Click "Load Data" to retrieve folders.</p>
+
+    <div id="foldersContainer" class="folders"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
