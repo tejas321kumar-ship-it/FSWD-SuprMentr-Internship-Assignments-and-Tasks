@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Folder Architect</title>
+  <title>Folder Architect - File Tree View</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
-    <h1>Folder Architect</h1>
-    <p class="subtitle">Retrieve data and show it like folders and files</p>
+    <h1>📁 Folder Architect</h1>
+    <p class="subtitle">Hierarchical file system explorer with nested folders and recursive rendering</p>
 
     <div class="controls">
-      <button id="loadBtn">Load Data</button>
-      <input id="searchInput" type="text" placeholder="Search file title..." />
+      <button id="loadBtn" class="btn btn-primary">Load Folder Tree</button>
+      <button id="resetBtn" class="btn btn-secondary">Reset</button>
+      <input id="searchInput" type="text" placeholder="Search files or folders..." class="search-input" />
     </div>
 
     <div id="loader" class="loader hidden"></div>
 
-    <p id="statusMessage" class="status">Click "Load Data" to retrieve folders.</p>
+    <p id="statusMessage" class="status">Ready. Click "Load Folder Tree" to fetch data.</p>
 
-    <div id="foldersContainer" class="folders"></div>
+    <div id="treeContainer" class="tree-container"></div>
   </div>
 
   <script src="script.js"></script>
