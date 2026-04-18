@@ -1,0 +1,12 @@
+{
+  "name": "route-master-bookstore",
+  "version": "1.0.0",
+  "description": "Express routes for bookstore books and authors",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

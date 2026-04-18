@@ -1,0 +1,115 @@
+.page {
+  min-height: 100vh;
+  padding: 28px 18px;
+  background: linear-gradient(180deg, #f5f8ff 0%, #eef6f1 100%);
+  color: #132238;
+}
+
+.header {
+  max-width: 760px;
+  margin: 0 auto 18px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -0.4px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #425466;
+}
+
+.panel {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d7e3ea;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(19, 34, 56, 0.08);
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.form input {
+  flex: 1;
+  border: 1px solid #b8cad6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+.form button,
+.actions button {
+  border: 0;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #fff;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.6;
+}
+
+.listWrap {
+  display: grid;
+  gap: 10px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dbe6ee;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.taskItem h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.taskItem p {
+  margin: 4px 0 0;
+  color: #516274;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions .danger {
+  background: #b42318;
+}
+
+.error {
+  margin: 0 0 10px;
+  color: #b42318;
+}
+
+.empty {
+  margin: 6px 0;
+  color: #516274;
+}
+
+@media (max-width: 680px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .taskItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

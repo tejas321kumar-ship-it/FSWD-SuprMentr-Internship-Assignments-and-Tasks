@@ -1,0 +1,13 @@
+{
+  "name": "data-modeler-blog-schema",
+  "version": "1.0.0",
+  "description": "MongoDB schema design for a blogging platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.15.0"
+  }
+}
